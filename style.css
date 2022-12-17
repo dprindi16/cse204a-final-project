@@ -2,7 +2,8 @@
     padding: 0;
     box-sizing: border-box;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header{
@@ -13,12 +14,9 @@ header{
     color: #17408B;
 }
 
-header .h1{
-    margin-top: 10px;
-}
-
-#head{
+#heading{
     margin-left: 10px;
+    margin-bottom: 3px;
 }
 
 
@@ -40,7 +38,8 @@ main{
     position: fixed;
     left: 20%;
     padding: 12px;
-    height: 200px;
+    height: 250px;
+    overflow: auto;
 }
 .search-area input{
     padding: 5px;
@@ -69,4 +68,35 @@ main{
 .search-area button:active{
     box-shadow: 0 1px #C9082A;
     transform: translateY(3px);
+}
+.player-info{
+    margin-top: 3px;
+    font-size: 25px;
+    color: #17408B;
+}
+.main-stats{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.main-stats p{
+    margin-top:10px;
+}
+
+h2{
+    color:#C9082A;
+    margin-top: 5px;
+}
+
+@media (max-width: 540px){
+    .logo{
+        display: none;
+    }
 }
